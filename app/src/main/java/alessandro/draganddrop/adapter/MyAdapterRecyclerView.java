@@ -1,11 +1,12 @@
 package alessandro.draganddrop.adapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
@@ -67,7 +68,8 @@ public class MyAdapterRecyclerView extends RecyclerView.Adapter<MyAdapterRecycle
         }
 
         public void setImage(int idImage){
-            Picasso.with(ivUser.getContext()).
+            //(ivUser.getContext())
+            Picasso.get().
                     load(idImage).
                     centerCrop().
                     resize(60,60).

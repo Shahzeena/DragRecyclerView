@@ -1,7 +1,8 @@
 package alessandro.draganddrop.adapter;
 
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import alessandro.draganddrop.interfaces.CallbackItemTouch;
 
@@ -34,7 +35,7 @@ public class MyItemTouchHelperCallback extends ItemTouchHelper.Callback {
 
     @Override
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-        callbackItemTouch.itemTouchOnMove(viewHolder.getAdapterPosition(),target.getAdapterPosition()); // information to the interface
+        callbackItemTouch.itemTouchOnMove(viewHolder.getAbsoluteAdapterPosition(),target.getAbsoluteAdapterPosition()); // information to the interface
         return true;
     }
 
