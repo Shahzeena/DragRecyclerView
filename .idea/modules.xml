@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DragRecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/DragRecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DragRecyclerView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DragRecyclerView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stickytimelineview/DragRecyclerView.stickytimelineview.iml" filepath="$PROJECT_DIR$/.idea/modules/stickytimelineview/DragRecyclerView.stickytimelineview.iml" />
     </modules>
   </component>
 </project>
